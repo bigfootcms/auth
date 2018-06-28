@@ -1,0 +1,63 @@
+<script src="{{@PLUGIN}}js/login.js"></script>
+<div class="cell">
+	<div class="row">
+		<div class="large-5 columns">
+			<div class="row">
+				<div class="large-12 columns">
+					<h3>Welcome.</h3>
+				
+					<p class="welcome">Looking to join beta testing? It takes just a moment to <a href="register">sign up</a>.</p>
+					<p class="welcome">If you already have an account but forgot your password, <a href="reset_password">click here</a>.</p>
+				</div>
+			</div>
+		</div>
+		<div class="large-7 columns">
+			<div class="row">
+				<form>
+					<fieldset>
+						<legend>Sign-in</legend>
+						<div class="row">
+							<div class="large-12 columns">
+								<p id="msg">Please sign in using your email address. If you previously configured <b>One-Time Password</b>, please use your chosen OTP App to retrive a valid code to sign-in.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="large-12 columns">
+							  <div class="row collapse">
+								<div class="small-3 columns">
+								  <span class="prefix">Email</span>
+								</div>
+								<div class="small-9 columns">
+								  <input name="email" type="text" placeholder="user@example.com" autocomplete="off" required />
+								</div>
+							  </div>
+							</div>
+							<div class="large-12 columns ">
+								<div class="row collapse">
+									<div class="small-3 columns">
+										<span class="prefix">Password / OTP</span>
+									</div>		  
+									<div class="small-6 columns">
+										<input name="password" type="password" />
+									</div>
+									<div class="small-3 columns">
+										<a href="#" id="submit" class="button postfix">Login</a>
+									</div>
+								</div>
+							</div>
+							<div class="large-12 columns ">
+								<div class="row collapse">
+									<div class="small-12 columns">
+										<label for="remember">Keep me logged in? <input id="remember" type="checkbox" /></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</fieldset>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
