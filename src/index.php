@@ -20,6 +20,14 @@ Base::instance()->get("HOOKS")->add_action('security', function(){
 			exit;
 		}
 	}
+	if ( Bigfoot::CMS()->inMaintenanceMode() ) {
+		if ( !Base::instance()->get("auth")->isLoggedIn() ) {
+			if ( Base::instance()->get("vpath") != "/login" && Base::instance()->get("vpath") != "/logout" && Base::instance()->get("vpath") != "/authenticate"   ) {
+				echo Bigfoot::CMS()->inMaintenanceMode();
+				exit;
+			}
+		}
+	}	
 });
 	
 Base::instance()->route('GET /login', function($f3) {
