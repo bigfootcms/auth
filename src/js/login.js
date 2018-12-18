@@ -48,7 +48,11 @@ $(document).ready(function() {
 						} else {
 							$('#msg').html('<h3>Success</h3>'+data.msg);
 							$('#submit').html("Redirecting...");
-							window.location.href = './';
+							if ( data.next_page != 'undefined' ) {
+								window.location.href = data.next_page;
+							} else {
+								window.location.href = './';
+							}
 						}
 					}
 				}
