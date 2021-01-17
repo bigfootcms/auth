@@ -1,5 +1,5 @@
 {
-    "name": "bigfootcms/auth",
+    "name": "bigfoot/auth",
     "description": "Plug & Play Authentication Suite built around PHP-Auth specifically for BigfootCMS. Simple, lightweight and secure.",
 	"homepage": "https://bigfootcms.com/plugins/auth",
     "type": "plugin",
@@ -13,7 +13,7 @@
         {
             "name": "Nicholas Maietta",
             "email": "nick@commnetivity.com",
-	        "homepage": "http://icode4u.com",
+	        "homepage": "http://maietta.org",
             "role": "Developer"			
         }
     ],
